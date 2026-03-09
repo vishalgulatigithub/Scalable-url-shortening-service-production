@@ -5,6 +5,13 @@ This service converts long URLs into short, shareable links and efficiently redi
 
 The system is designed with **scalability, caching, event streaming, and rate limiting**, similar to real-world URL shortening systems.
 
+**Live using curl: 
+**
+curl --location 'https://scalable-url-shortening-service.onrender.com/api/url/shorten' \
+--header 'Content-Type: application/json' \
+--data '{
+ "originalUrl":"https://google.com/"
+}'
 ---
 
 # 🚀 Features
