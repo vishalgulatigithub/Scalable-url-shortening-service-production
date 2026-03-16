@@ -10,6 +10,7 @@ import java.net.URI;
 
 
 @RestController
+@CrossOrigin(origins = {"https://shortenup.netlify.app", "http://localhost:5173", "http://localhost:5174"})
 @RequestMapping("/api/url")
 public class UrlController {
 
