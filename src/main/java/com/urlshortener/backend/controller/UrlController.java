@@ -19,6 +19,11 @@ public class UrlController {
     public UrlController(UrlService urlService) {
         this.urlService = urlService;
     }
+    // (fixes 404)
+    @GetMapping("/")
+    public String home() {
+        return "URL Shortener is running 🚀";
+    }
 
     @PostMapping("/shorten")
     public String shorten (@RequestBody UrlRequest request) {
